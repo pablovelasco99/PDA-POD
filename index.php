@@ -8,7 +8,7 @@
 <body>
     <?php
 
-    include_once 'functions.php';
+    include_once 'Functions/functions.php';
     include_once './DB/conexion.php';
 
     //-------------//
@@ -23,12 +23,12 @@
 
     $conn = ConnectDB();
 
-    if (($archivo = fopen("test.csv", "r")) !== FALSE) {
+    if (($archivo = fopen("Files/PDA/test.csv", "r")) !== FALSE) {
         $i = 0;
         while (($rawfile1[$i++] = fgetcsv($archivo)) !== FALSE);
         fclose($archivo);
     }
-    if (($archivo = fopen("test2.csv", "r")) !== FALSE) {
+    if (($archivo = fopen("Files/POD/test2.csv", "r")) !== FALSE) {
         $i = 0;
         while (($rawfile2[$i++] = fgetcsv($archivo)) !== FALSE);
         fclose($archivo);
@@ -70,7 +70,6 @@
         }
         echo("<br>");
     }
-*/
     echo("<br><h3>Grupos por departamento</h3><br>");
     foreach($grupos as $entry){
         foreach($entry as $value){
@@ -137,7 +136,6 @@
     }
 
     //PARA TABLA ASIGNATURA
-    //Los nombres largos los acaba en puntos suspensivos 
     foreach ($materias as $row) {
         $nombre = $row[2];
         $titulacion = $row[0];

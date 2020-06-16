@@ -172,8 +172,4 @@ function deleteAccentMarks($string){
     return $string;
 }
 
-function sendQueries($raw){
-    
-}
-
 ?>
