@@ -24,4 +24,22 @@ El programa se divide en 4 carpetas y 1 archivo **index.php**.
 1. Carpeta **DB**: Aquí encontramos los archios necesarios para la creación de tablas y conexión con la base de datos.
 2. Carpeta **FILES**: Esta a su vez se divide en dos sub-carpetas: PDA y POD, cada una para sus respectivos archivos.
 3. Carpeta **FUNCTIONS**: En esta carpeta encontramos el archivo **functions.php**, el cual se encarga de extraer toda la información de los archivos mediante diferentes métodos de selección, que serán explicacos a continuación:
-    * 
+    * **parseTitulacion**: Esta función se encarga de devolver un array con la tilacion, el campus y el código de la titulación.
+    * **parseAsignaturas** Esta función se encarga de devolver un array bidimensional con el código de la titulación, el código de la asignatura y el nombre de la asignatura.
+    * **parseDepartamentos**: Esta función se encarga de devolver un array bidimensional con los códigos de departamento y su nombre.
+    * **parseAreas**: Esta función se encarga de devolver un array bidimensional con los códigos de departamento, de área y su nombre.
+    * **parseGrupos**: Esta función se encarga de devolver una array bidimensional con el código de grupo, generando uno único para cada uno, el nombre de la asignatura, el código de departamento y si número de horas.
+    * **parseProfesores**: Esta función se encarga de devolver un array bidimensional con el código del departamento del profesor, su dni (en el caso de que esté pendiente de contrato muestra su código) y su nombre.
+    * **parseProfesoresAsignaturas**: Esta función devuelve un array bidimensional que devuelve su dni (en el caso de que esté pendiente de contrato muestra su código) y su nombre.
+    * **getTag**: Esta función se utiliza para asignarle una letra a cada grupo cada vez que se repita. Esta función es usada en la función **parseGrupos**.
+    * **deleteAccentMarks**: Esta función se utiliza para sustituir los caracteres con acentos en caracteres sin acentos y ahorrarnos así ciertos errores.
+    * Todas estas funciones son llamadas desde **index.php**.
+4. Carpeta **MODEL**: En esta carpeta se encuentran las clases para cada tabla de la base de datos. Se realizan en todas lo mismo, así que lo explicaré para el archivo **AREA_Model.php**.
+    * Estos archivos están formados principalmente por:
+        * Atributos: estos atributos son los campos que posee cada tabla en la base de datos.
+        * Un constructor: esta función se encarga de asignarle a los atributos de la clase los atributos que se le pasan como parámetro desde **index.php** y genera una conexión con la base de datos.
+        * Una función ADD: esta función se encarga de generar una consulta. Esta consulta lo que va a hacer va a ser asignarle a los atributos de la tabla de la base de datos los valores de los atributos de esta clase o les metían saltos de línea provenientes de la extracción de estos datos de los ficheros.
+        * También existen un par de funciones que tienen algúnos métodos más ya que, debido a la longitud de sus atributos, se les añadían espacios en blanco antes o después del campo que no permitian que se visualizara bien. Los métodos que usan para arreglar esto son:
+        * **TRIM**: Esta función lo que hace es generar una consulta con la que se eliminan los espacio en blanco antes y después del atributo.
+        * **CHANGE_LINEBRAKS**: Esta función lo que hace es generar una consulta con la que se sustituyen los saltos de linea por un espacio en blanco dentro de todos los campos.
+5. Archivo **index.php**: En este archivo es donde se abren todos los archivos, se recorren y se van almacenando en un array. Este array después será pasado a los diferentes métodos antes descritos.
