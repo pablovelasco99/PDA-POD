@@ -47,6 +47,9 @@ El programa se divide en 4 carpetas y 1 archivo **index.php**.
 ## BROWSER SUPPORT
 Todos los buscadores actuales.
 
+## SUPPORT PROJECT
+If tou want to contribute helping me you can donate me at <a href="paypal.me/pablovelasco93">Paypal</a>
+
 ## LICENSE
 MIT License
 
