@@ -7,7 +7,7 @@ Para trabajar con este proyecto tendremos que convertir los archivos (pdf) que q
 
 El uso de dos páginas diferentes para la transformación de estos archivos se realiza debido a que la página [Convertio](URL "https://convertio.co/es/") funciona perfectamente cuando son archivos pequeños, con pocas tablas. Mientras que [Aconvert](URL "https://www.aconvert.com/pdf/") funciona perfectamente con archivos más grandes, con una cantidad de tablas más elevada.
 
-Otro requisito que hay que cumplir es tener instalado PHP (si no lo tienes instalado puedes descargarlo en [PHP](URL "https://www.php.net/downloads.php") y XAMPP u otra aplicación que nos permita crear un servidor propio en nuestro equipo (si no lo tienes instalado puedes descargarlo en [XAMPP](URL "https://www.apachefriends.org/es/download.html").
+Otro requisito que hay que cumplir es tener instalado PHP (si no lo tienes instalado puedes descargarlo en [PHP](URL "https://www.php.net/downloads.php")) y XAMPP u otra aplicación que nos permita crear un servidor propio en nuestro equipo (si no lo tienes instalado puedes descargarlo en [XAMPP](URL "https://www.apachefriends.org/es/download.html")).
 
 ## PUESTA EN MARCHA
 Para poder utilizar esta programa tendremos que seguir los siguientes pasos:
