@@ -48,7 +48,7 @@ El programa se divide en 4 carpetas y 1 archivo **index.php**.
 Todos los buscadores actuales.
 
 ## SUPPORT PROJECT
-If tou want to contribute helping me you can donate me at <a href="https://paypal.me/pablovelasco93?locale.x=es_ES">Paypal</a>
+If you want to contribute helping me you can donate me at <a href="https://paypal.me/pablovelasco93?locale.x=es_ES">Paypal</a>
 
 ## LICENSE
 MIT License
