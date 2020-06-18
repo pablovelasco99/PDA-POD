@@ -2,7 +2,7 @@
 
 ## REQUISITOS
 Para trabajar con este proyecto tendremos que convertir los archivos (pdf) que queramos transferir a la base de datos en archivos legibles para este programa (csv). Para esto utilizaremos los siguientes enlaces:
-1. Para los archivos PDA utilizaremos la siguiente página: [Convertio](URL "https://convertio.co/es/")
+1. Para los archivos PDA utilizaremos la siguiente página: <a href="https://convertio.co/es/">Convertio</a>[Convertio](URL "https://convertio.co/es/")
 2. Para los archivos POD utilizaremos la siguiente página: [Aconvert](URL "https://www.aconvert.com/pdf/")
 
 El uso de dos páginas diferentes para la transformación de estos archivos se realiza debido a que la página [Convertio](URL "https://convertio.co/es/") funciona perfectamente cuando son archivos pequeños, con pocas tablas. Mientras que [Aconvert](URL "https://www.aconvert.com/pdf/") funciona perfectamente con archivos más grandes, con una cantidad de tablas más elevada.
