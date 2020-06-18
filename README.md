@@ -24,12 +24,12 @@ El programa se divide en 4 carpetas y 1 archivo **index.php**.
 1. Carpeta **DB**: Aquí encontramos los archios necesarios para la creación de tablas y conexión con la base de datos.
 2. Carpeta **FILES**: Esta a su vez se divide en dos sub-carpetas: PDA y POD, cada una para sus respectivos archivos.
 3. Carpeta **FUNCTIONS**: En esta carpeta encontramos el archivo **functions.php**, el cual se encarga de extraer toda la información de los archivos mediante diferentes métodos de selección, que serán explicados a continuación:
-    * **parseTitulacion**: Esta función se encarga de devolver un array con la tilacion, el campus y el código de la titulación.
+    * **parseTitulacion**: Esta función se encarga de devolver un array con la titulacion, el campus y el código de la titulación.
     * **parseAsignaturas** Esta función se encarga de devolver un array bidimensional con el código de la titulación, el código de la asignatura y el nombre de la asignatura.
     * **parseDepartamentos**: Esta función se encarga de devolver un array bidimensional con los códigos de departamento y su nombre.
     * **parseAreas**: Esta función se encarga de devolver un array bidimensional con los códigos de departamento, de área y su nombre.
     * **parseGrupos**: Esta función se encarga de devolver una array bidimensional con el código de grupo, generando uno único para cada uno, el nombre de la asignatura, el código de departamento y si número de horas.
-    * **parseProfesores**: Esta función se encarga de devolver un array bidimensional con el código del departamento del profesor, su dni (en el caso de que esté pendiente de contrato muestra su código) y su nombre.
+    * **parseProfesores**: Esta función se encarga de devolver un array bidimensional con el código del departamento del profesor, su dni (en el caso de que esté pendiente de contrato muestra su código sin su nombre) y su nombre.
     * **parseProfesoresAsignaturas**: Esta función devuelve un array bidimensional que devuelve su dni (en el caso de que esté pendiente de contrato muestra su código) y su nombre.
     * **getTag**: Esta función se utiliza para asignarle una letra a cada grupo cada vez que se repita. Esta función es usada en la función **parseGrupos**.
     * **deleteAccentMarks**: Esta función se utiliza para sustituir los caracteres con acentos en caracteres sin acentos y ahorrarnos así ciertos errores.
