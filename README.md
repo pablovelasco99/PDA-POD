@@ -44,6 +44,9 @@ El programa se divide en 4 carpetas y 1 archivo **index.php**.
         * **CHANGE_LINEBREAKS**: Esta función lo que hace es generar una consulta con la que se sustituyen los saltos de linea por un espacio en blanco dentro de todos los campos.
 5. Archivo **index.php**: En este archivo es donde se abren todos los archivos, se recorren y se van almacenando en un array. Este array después será pasado a los diferentes métodos antes descritos.
 
+## VERSION
+Alpha version, beta version available soon
+
 ## BROWSER SUPPORT
 Todos los buscadores actuales.
 
