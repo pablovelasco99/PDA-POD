@@ -42,7 +42,7 @@ El programa se divide en 4 carpetas y 1 archivo **index.php**.
         * También existen un par de funciones que tienen algúnos métodos más ya que, debido a la longitud de sus atributos, se les añadían espacios en blanco antes o después del campo que no permitian que se visualizara bien. Los métodos que usan para arreglar esto son:
         * **TRIM**: Esta función lo que hace es generar una consulta con la que se eliminan los espacio en blanco antes y después del atributo.
         * **CHANGE_LINEBREAKS**: Esta función lo que hace es generar una consulta con la que se sustituyen los saltos de linea por un espacio en blanco dentro de todos los campos.
-5. Archivo **index.php**: En este archivo es donde se abren todos los archivos, se recorren y se van almacenando en un array. Este array después será pasado a los diferentes métodos antes descritos.
+5. Archivo **index.php**: Aquí es donde se abren todos los archivos, se recorren y se van almacenando en un array. Este array después será pasado a los diferentes métodos antes descritos.
 
 ## VERSION
 Alpha version, beta version available soon
