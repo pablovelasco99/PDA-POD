@@ -50,9 +50,6 @@ Alpha version, beta version available soon
 ## BROWSER SUPPORT
 Todos los buscadores actuales.
 
-## SUPPORT PROJECT
-If you want to contribute helping me you can donate <a href="https://paypal.me/pablovelasco93?locale.x=es_ES">here</a>
-
 ## LICENSE
 MIT License
 
